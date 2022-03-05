@@ -1,6 +1,6 @@
 <?php
 
-class Simple2
+class Example2
 {
     private $name;
     private $age;

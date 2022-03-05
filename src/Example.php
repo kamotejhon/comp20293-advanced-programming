@@ -1,20 +1,20 @@
 <?php
-class Simple
+class Example
 {
     private $number;
     
-    public function __construct($number) //10
+    public function __construct($number)
     {
         $this->number = $number;
     }
 
-    public function modulus($divisor) //2
+    public function modulus($divisor) 
     {
-        if($divisor > $this->number) // - throw an invalid exception if the given divisor is greater than the dividend
+        if($divisor > $this->number) 
         {
             throw new \InvalidArgumentException("Divisor should not greater than dividend");
         }
-        else if(!is_numeric($divisor)) // - should only accept numbers
+        else if(!is_numeric($divisor))
         {
             throw new \InvalidArgumentException("Divisor is not a number");
         }
